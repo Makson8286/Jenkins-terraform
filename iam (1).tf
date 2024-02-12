@@ -14,12 +14,12 @@ resource "aws_s3_bucket" "my_bucket" {
 resource "aws_s3_bucket_object" "my_folder" {
   bucket = "bankbbgf"
   key    = "files/"
-  source = "/home/dik/files/lanos12.txt"
+  source = "/your/path/files/lanos12.txt"
 }
 resource "aws_s3_bucket_object" "my_object" {
   bucket = "bankbbgf"
   key    = "files/lanos12.txt"
-  source = "/home/dik/files/lanos12.txt"
+  source = "/your/path/files/lanos12.txt"
 }
 output "presigned_url" {
   value = "https://bankbbgf.s3.eu-north-1.amazonaws.com/lanos12.txt"
